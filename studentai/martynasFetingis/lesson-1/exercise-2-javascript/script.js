@@ -1,20 +1,16 @@
 const name = "martynas";
-console.log(name);
-
 const surname = "fetingis";
-console.log(surname);
-
 const age = 29;
-console.log(age);
-
 const isHappy = false;
-console.log(isHappy);
-
 const activieties = ["sport", "gaming", "fishing"];
-console.log(activieties);
-
 const loc = {
-  born: "Taurage",
-  currently: "Vilnius",
-};
+    born: "Taurage",
+    currently: "Vilnius",
+  };
+  
+console.log(name);
+console.log(surname);
+console.log(age);
+console.log(isHappy);
+console.log(activieties);
 console.log(loc);

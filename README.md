@@ -1,2 +1,2 @@
 # cafe01-town-hall-new
-This is where we store our exercises 
+This is where we store our exercises (ye boi) 

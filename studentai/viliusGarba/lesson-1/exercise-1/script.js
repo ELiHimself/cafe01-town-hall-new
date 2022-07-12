@@ -15,5 +15,5 @@ const person = {
     lastName: "Garba",
     age: 27,
     favouriteColor: "black",
-}
+};
 console.log(person);

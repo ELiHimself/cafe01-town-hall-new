@@ -1,5 +1,5 @@
-function eat (foodFunction) {
-    return foodFunction + ' tasted really good.'
+function eat(foodFunction) {
+    return foodFunction + ' tasted really good.';
 }
 
 console.log(eat('bananas'));

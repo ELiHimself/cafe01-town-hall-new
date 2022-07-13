@@ -11,5 +11,6 @@ const favFood = ["pizza", "soup", "burrito"];
 console.log(favFood);
 
 
-const person = { name: name, age: age};
+
+const person = { name: name, age: age,};
 console.log(person);

@@ -3,4 +3,4 @@ var pizza = {
     crust: "deep dish",
     serves: 2
 }
-console.log(pizza)
+console.log(pizza);

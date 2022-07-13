@@ -39,3 +39,7 @@ And returns the list formatted as such:
 `Without available evolutions:`
 
 "(#143) Snorlax has 1 weakness: Fighting. However, it has no available evolutions."
+
+
+## Bonus objective (optioinal): 
+Create grid of pokemons using the data from pokemon list.

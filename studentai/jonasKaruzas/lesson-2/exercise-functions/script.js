@@ -9,18 +9,18 @@ console.log(result1);
 
 // ----
 
-const Person = {
+const person = {
     firstName: 'Jonas',
     age: 10,
     isHuman: true,
 }
 
-function notHuman(obj) {
+function makeObjNotHuman(obj) {
     obj.isHuman = false;
 }
 
-notHuman(Person);
-console.log(Person);
+makeObjNotHuman(person);
+console.log(person);
 
 // ----
 
@@ -59,18 +59,18 @@ console.log(resultA);
 
 // ----
 
-const Person2 = {
+const person2 = {
     firstName: 'Jonas',
     age: 10,
     isHuman: true,
 }
 
-const notHumanB = (obj) => {
+const makeObjNotHumanB = (obj) => {
     obj.isHuman = false;
 }
 
-notHumanB(Person2);
-console.log(Person2);
+makeObjNotHumanB(person2);
+console.log(person2);
 
 // ----
 

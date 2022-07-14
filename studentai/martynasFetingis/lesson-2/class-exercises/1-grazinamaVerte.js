@@ -1,4 +1,4 @@
-function checkAge1 (age) {
+function checkAge1(age) {
   if (age > 18) {
     return true;
   } else {
@@ -6,7 +6,7 @@ function checkAge1 (age) {
   }
 }
 
-function checkAge2 (age) {
+function checkAge2(age) {
   if (age > 18) {
     return true;
   }

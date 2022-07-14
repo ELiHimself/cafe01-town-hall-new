@@ -1,3 +1,7 @@
+const num1 = prompt('Enter first number');
+const num2 = prompt('Enter second number');
+const action = prompt('Enter action (addition, substraction, multiplication, division)');
+
 function calculate(num1, num2, action) {
     switch (action) {
         case 'addition':
@@ -9,11 +13,8 @@ function calculate(num1, num2, action) {
         case 'division':
             return num1 / num2;
         default:
-            return 'Error';
+            return confirm('Error');
     }
 }
 
-console.log(calculate(5, 5, 'addition'));
-console.log(calculate(5, 5, 'substraction'));
-console.log(calculate(5, 5, 'multiplication'));
-console.log(calculate(5, 5, 'division'));
+console.log(calculate(num1, num2, action));

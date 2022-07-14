@@ -3,7 +3,7 @@ function checkAge(age) {
         return true;
     } else {
         return confirm("Did parents allow you?");
-    }
+    };
 };
 
 function checkAge2(age) {

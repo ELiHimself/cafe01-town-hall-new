@@ -20,4 +20,4 @@ console.log('2 < 18', checkAge2(17));
 console.log('2 > 18', checkAge2(19));
 
 //parasiau ka rodet pavyzdy, nieko nesuprantu, kodel visur true, prie ko cia 1 ir 2// :')
-//nu bet dar bandau suprast//
+//nu bet dar bandau suprast:) //

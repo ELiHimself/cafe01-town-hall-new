@@ -12,7 +12,7 @@ const a = 1; const b = 2; const c = 3;
 
       (function fourthFunction () {
         const a = 1; const c = 8;
-      })()
-    })()
-  })()
-})()
+      })();
+    })();
+  })();
+})();

@@ -32,14 +32,14 @@ function printPokemon(pokemonItem) {
   //   console.log(pokemonItem);
 }
 
-// function printPokemons(pokemonList, printCount, offset = 0) {
-//   const pokemonArr = pokemonList.pokemon;
+function printPokemons(pokemonList, printCount, offset = 0) {
+  const pokemonArr = pokemonList.pokemon;
 
-//   for (let i = offset; i < printCount + offset; i++) {}
-// }
+  for (let i = offset; i < printCount + offset; i++) {
+    printPokemon(pokemonArr[i]);
+  }
+}
 
-// printPokemons(pokemons, 2, 0);
-printPokemon(pokemons.pokemon[0]);
-console.log('----------');
-printPokemon(pokemons.pokemon[142]);
-// console.log(pokemons);
+printPokemons(pokemons, 5, 0);
+console.log('+++++');
+printPokemons(pokemons, 1, 142);

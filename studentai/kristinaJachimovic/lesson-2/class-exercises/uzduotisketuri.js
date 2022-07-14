@@ -10,7 +10,7 @@ function calculate(num1, num2, action) {
  } else {
   return "not action";
  }
-} 
+};
 
 console.log(calculate(2, 1, "composition"));
 console.log(calculate(4,2,"division"));

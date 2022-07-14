@@ -1,0 +1,3 @@
+function getGeneration(num, gender) {
+    
+}

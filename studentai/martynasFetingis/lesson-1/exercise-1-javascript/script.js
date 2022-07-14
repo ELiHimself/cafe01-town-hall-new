@@ -6,7 +6,7 @@ const activieties = ["sport", "gaming", "fishing"];
 const loc = {
     born: "Taurage",
     currently: "Vilnius",
-  };
+    };
   
 console.log(name);
 console.log(surname);

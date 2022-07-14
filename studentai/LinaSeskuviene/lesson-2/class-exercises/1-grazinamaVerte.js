@@ -8,8 +8,7 @@ function checkAge(age) {
 console.log('1 < 18', checkAge(17));
 console.log('1 > 18', checkAge(19));
 
-
-function ckeckAge2(age) {
+function checkAge2(age) {
     if (age > 18) {
         return true;  
 }

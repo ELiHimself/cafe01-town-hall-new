@@ -74,9 +74,7 @@ console.log(person2);
 
 // ----
 
-const currentTimeB = () => {
-    return new Date().toLocaleTimeString();
-}
+const currentTimeB = () => new Date().toLocaleTimeString();
 
 const resultB = currentTimeB();
 console.log(resultB);

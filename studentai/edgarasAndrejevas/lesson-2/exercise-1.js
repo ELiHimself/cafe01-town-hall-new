@@ -8,8 +8,7 @@ function checkAge(age) {
         return confirm ('Did parents allow you?');
     }
 }
-
-alert(checkAge)
+console.log(checkAge(age))
 
 // let age = prompt('What is your age?');
 

@@ -1,3 +1,3 @@
-const example = 'example string'
+const example = 'example string';
 example.length;
 console.log(example.length)

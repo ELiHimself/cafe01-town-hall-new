@@ -6,9 +6,8 @@
 //   }
 //   }
 
-
 function checkAge(age) {
-  return (age > 18 ? console.log('welcome') :  confirm('Did parents allow you?'))
-  };
+  return age > 18 ? console.log('welcome') : confirm('Did parents allow you?');
+}
 
 console.log(checkAge(15));

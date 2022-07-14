@@ -1,53 +1,17 @@
-function getGeneration(number, gender) {
-  if (number < 0 || gender === "m") {
-    switch (number) {
-      case -1: 
-        return 'father';
-        break;
-      case -2: 
-        return 'grandfather';
-        break;
-      case -3: 
-        return 'great grandfather';
-        break;
-    }
-  } else if (number > 0 || gender === "m") {
-    switch (number) {
-      case 1: 
-        return 'son';
-        break;
-      case 2: 
-        return 'grandson';
-        break;
-      case 3: 
-        return 'great grandson';
-        break;
-    }
-  } else if (number < 0 || gender === "f") {
-    switch (number) {
-      case -1: 
-        return 'mother';
-        break;
-      case -2: 
-        return 'grandmother';
-        break;
-      case -3: 
-        return 'great grandmother';
-        break;
-    }
-  } else if (number > 0 || gender === "f") {
-    switch (number) {
-      case 1: 
-        return 'daughter';
-        break;
-      case 2: 
-        return 'granddaughter';
-        break;
-      case 3: 
-        return 'great granddaughter';
-        break;
-    }
-  }
+const generations = {
+  '-3': {'m': 'great grandfather', 'f': 'great grandmother'},
+  '-2': {'m': 'grandfather', 'f': 'grandmother'},
+  '-1': {'m': 'father', 'f': 'mother'},
+  '0': {'m': 'me!', 'f': 'me!'},
+  '1': {'m': 'son', 'f': 'daughter'},
+  '2': {'m': 'grandson', 'f': 'granddaughter'},
+  '3': {'m': 'great grandson', 'f': 'great granddaughter'},
 }
 
-getGeneration (1, "m");
+function getGeneration(number, gender) {
+  return generations[number][gender];
+}
+
+console.log(getGeneration(1, 'm'));
+console.log(getGeneration(-1, 'm'));
+console.log(getGeneration(3, 'f'));

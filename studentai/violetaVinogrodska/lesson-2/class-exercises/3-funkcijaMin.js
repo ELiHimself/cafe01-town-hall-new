@@ -7,3 +7,4 @@ function getMin(array) {
 }
 console.log(getMin([5, 6]));
 console.log(getMin([10,4]));
+console.log(getMin([3,-1]));

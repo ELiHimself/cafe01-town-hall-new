@@ -1,5 +1,9 @@
-const arrayMin = [5, 10];
-function arrayMin(a, b) {
-    let min = array[0];
-    for (let i = 0)
+function getMin(array) {
+    const minimum = array.sort((a, b) => a - b)
+
+    return {
+        min: minimum[0],
+    }
 }
+console.log(getMin([5, 6]));
+console.log(getMin([10,4]));

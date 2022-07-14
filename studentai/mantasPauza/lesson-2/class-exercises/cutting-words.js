@@ -1,6 +1,6 @@
-let a = prompt('Enter a sentence');
-let b = prompt('Enter a number');
+const a = prompt('Enter a sentence');
+const b = prompt('Enter a number');
 
-let c = a.substring(0, a.length - b);
+const c = a.substring(0, a.length - b);
 
 console.log(c);

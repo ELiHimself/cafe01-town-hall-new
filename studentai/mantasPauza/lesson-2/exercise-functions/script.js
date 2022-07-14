@@ -11,9 +11,11 @@ console.log(greeting);
 
 //**************************
 
-void function () {
+function empty() {
     console.log('I am a void function');
-}();
+};
+
+empty();
 
 // *************************
 const person = {

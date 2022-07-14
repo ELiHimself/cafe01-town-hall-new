@@ -1,5 +1,5 @@
-const num1 = prompt('Enter first number');
-const num2 = prompt('Enter second number');
+const num1 = +prompt('Enter first number');
+const num2 = +prompt('Enter second number');
 const action = prompt('Enter action (addition, substraction, multiplication, division)');
 
 function calculate(num1, num2, action) {
@@ -13,7 +13,7 @@ function calculate(num1, num2, action) {
         case 'division':
             return num1 / num2;
         default:
-            return confirm('Error');
+            throw new Error('Klaida');
     }
 }
 

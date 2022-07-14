@@ -1,4 +1,4 @@
-function getFirstLetter(string) {
-  console.log(string.chartAt(0));
+function getFirstLetter(str) {
+  console.log(str.charAt(0).toUpperCase());
 }
 getFirstLetter('hello');

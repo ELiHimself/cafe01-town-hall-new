@@ -23,11 +23,26 @@ function callOut(name) {
 const callOutLoud = callOut(name);
 console.log(callOut("Mantas"));
 
-// return current time
+// return current date
 
-function currentTime(){
-    return `today is ${date}, and time is ${time}`
+function currentDate(){
+    return `today is ${date}`;
 }
 
+const date = new Date();
+console.log(currentDate());
 
-console.log(currentTime())
+// function that takes 1..n arguments
+
+function add(a, b, c, d){
+    add = a + b + c + d;
+}
+const sum = add(1, 2, 3, 4);
+console.log(add);
+
+//Chalange 2
+
+const getReaction = () => `Holy cow!`;
+
+const reaction = getReaction();
+console.log(reaction);

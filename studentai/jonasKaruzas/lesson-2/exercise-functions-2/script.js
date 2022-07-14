@@ -9,8 +9,13 @@ function printPokemon(pokemonItem) {
   const pokemonName = pokemonItem.name;
   const pokemonWeaknessesLength = pokemonItem.weaknesses.length;
   const weaknessWord = pokemonWeaknessesLength === 1 ? 'weakness' : 'weaknesses';
-  const pokemonWeaknesses = pokemonItem.weaknesses;
+  let pokemonWeaknesses = pokemonItem.weaknesses;
   const pokemonNextEvolutionArr = pokemonItem.next_evolution;
+
+  if (pokemonWeaknessesLength > 1) {
+    let lastWeakness = pokemonWeaknesses.splice(-1);
+    pokemonWeaknesses = pokemonWeaknesses.join(', ') + ' and ' + lastWeakness[0];
+  }
 
   result = `(#${pokemonId}) ${pokemonName} has ${pokemonWeaknessesLength} ${weaknessWord}: ${pokemonWeaknesses}. `;
 
@@ -29,7 +34,6 @@ function printPokemon(pokemonItem) {
   }
 
   console.log(result);
-  //   console.log(pokemonItem);
 }
 
 function printPokemons(pokemonList, printCount, offset = 0) {

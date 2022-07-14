@@ -7,13 +7,13 @@ function getFirstLeter(str){
     .map(word => word[0])
     .join(' ');
 
-    return firstLeter;
+    return firstLeter.toUpercase();
 }
 console.log(getFirstLeter('nice'));
 
 
 //arba:
 function getFirstLeter(str){
-    console.log(str.charAt(0))
+    console.log(str.charAt(0).toUpercase())
 }
 getFirstLeter('nice')

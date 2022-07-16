@@ -7,7 +7,7 @@ action == '+' ? parseInt(num1) + parseInt(num2) :
 action == '-' ? num1 - num2 : 
 action == '*' ? num1 * num2 : 
 action == '/' ? num1 / num2 : 
-window.alert('You have to read instructions');
+window.alert('You have to read instructions more carefully');
 
 const result = 
 window.confirm(`The result of ${num1} ${action} ${num2} = `+ calculate +`\nCan you confirm`) ? window.alert('Thank you') : window.alert('I`m Sorry. An error occurred.');

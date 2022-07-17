@@ -1,8 +1,6 @@
-function printPokemon(pokemonItem) {
-  if ('prev_evolution' in pokemonItem) {
-    return;
-  }
+const onlyFirstEvolution = true;
 
+function printPokemon(pokemonItem) {
   let result = '';
 
   const pokemonId = pokemonItem.id;
@@ -29,6 +27,8 @@ function printPokemon(pokemonItem) {
         result += ',';
       }
     }
+
+    result += '.';
   } else {
     result += 'However, it has no available evolutions.';
   }
@@ -38,12 +38,27 @@ function printPokemon(pokemonItem) {
 
 function printPokemons(pokemonList, printCount, offset = 0) {
   const pokemonArr = pokemonList.pokemon;
+  let selected = [];
 
-  for (let i = offset; i < printCount + offset; i++) {
-    printPokemon(pokemonArr[i]);
+  while (selected.length < printCount) {
+    if (onlyFirstEvolution) {
+      if (!('prev_evolution' in pokemonArr[offset])) {
+        selected.push(pokemonArr[offset]);
+      }
+    } else {
+      selected.push(pokemonArr[offset]);
+    }
+    offset++;
   }
+
+  selected.forEach((element) => {
+    printPokemon(element);
+    showPokemon(element);
+  });
 }
+
+function showPokemon(pokemonItem) {}
 
 printPokemons(pokemons, 5, 0);
 console.log('+++++');
-printPokemons(pokemons, 1, 142);
+printPokemons(pokemons, 5, 3);

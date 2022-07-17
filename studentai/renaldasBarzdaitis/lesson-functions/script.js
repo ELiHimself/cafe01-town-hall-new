@@ -10,14 +10,25 @@
 
 // uzduotis 3
 
-function composition(a, b) {
-    return (a + b);
+function calculate(a, b, composition) {
+    composition = a + b;
 }
-console.log(composition(15, 5));
+console.log(calculate(5, 5));
 
-function substract(a, b) {
-    return (a - b);
-}
-console.log(substract(15, 5));
+// function substraction(a, b) {
+//     return (a - b);
+// }
+// console.log(substraction(5, 5));
+
+// function multiplication(a, b) {
+//     return (a * b);
+// }
+// console.log(multiplication(5, 5));
+
+// function division(a, b) {
+//     return (a / b);
+// }
+// console.log(division(5, 5));
+
 // uzduotis 4
 

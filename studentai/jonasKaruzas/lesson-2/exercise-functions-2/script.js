@@ -109,6 +109,6 @@ function deleteAllCards() {
   }
 }
 
-printPokemons(pokemons, 5, 0);
+// printPokemons(pokemons, 5, 0);
 console.log('+++++');
 // printPokemons(pokemons, 5, 0);

@@ -1,21 +1,21 @@
 
 // 1:
 
-function suma (a, b){
-    return a + b;
+function suma(a, b){
+    console.log(a + b);
 }
-console.log(suma(54, 33));
+suma(55, 66)
 
 // 2:
 
-function atimtis (a){
+function atimtis(a){
     return 100 - a;
 }
-console.log(atimtis(66))
+console.log(atimtis(66));
 
 // 3:
 
-function daugyba (a, b){
+function daugyba(a, b){
     return a * b;
 }
-console.log(daugyba(33, 66))
+console.log(daugyba(33, 66));

@@ -1,0 +1,22 @@
+{
+  "name": "cafe01-town-hall-new",
+  "version": "1.0.0",
+  "description": "This is where we store our exercises (ye boi)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ELiHimself/cafe01-town-hall-new.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ELiHimself/cafe01-town-hall-new/issues"
+  },
+  "homepage": "https://github.com/ELiHimself/cafe01-town-hall-new#readme",
+  "dependencies": {
+    "prettier": "^2.7.1"
+  }
+}

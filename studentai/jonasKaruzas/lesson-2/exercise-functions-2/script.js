@@ -12,8 +12,9 @@ function printPokemon(pokemonItem) {
   const pokemonNextEvolutionArr = pokemonItem.next_evolution;
 
   if (pokemonWeaknessesLength > 1) {
-    let lastWeakness = pokemonWeaknesses.splice(-1);
-    pokemonWeaknesses = pokemonWeaknesses.join(', ') + ' and ' + lastWeakness[0];
+    const lastWeakness = pokemonWeaknesses.slice(-1);
+    const remainingWeakness = pokemonWeaknesses.slice(0, -1);
+    pokemonWeaknesses = remainingWeakness.join(', ') + ' and ' + lastWeakness[0];
   }
 
   result = `(#${pokemonId}) ${pokemonName} has ${pokemonWeaknessesLength} ${weaknessWord}: ${pokemonWeaknesses}. `;

@@ -18,3 +18,42 @@ function multiply(a, b) {
 }
 
 multiply(31, 3);
+
+//4. Exponentiation
+function exponentiation(a, b) {
+  return console.log(a ** b);
+}
+
+exponentiation(4, 3);
+
+//5. Division
+function division(a, b) {
+  return console.log(a / b);
+}
+
+division(100, 10);
+
+//6. Remainder
+function remainder(a, b) {
+  return console.log(a % b);
+}
+
+remainder(28, 3);
+
+//7. Increment
+function increment(a) {
+  console.log(a);
+  a++;
+  return console.log(a);
+}
+
+increment(9);
+
+//8. IDecrement
+function decrement(a) {
+  console.log(a);
+  a--;
+  return console.log(a);
+}
+
+increment(11);

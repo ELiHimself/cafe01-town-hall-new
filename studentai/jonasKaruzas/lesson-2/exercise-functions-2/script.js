@@ -1,7 +1,3 @@
-let startFromNr = 0;
-let printCountNr = 0;
-const onlyFirstEvolution = true;
-
 function printPokemon(pokemonItem) {
   let result = '';
   const pokemonId = pokemonItem.id;
@@ -40,10 +36,9 @@ function printPokemon(pokemonItem) {
 }
 
 function printPokemons(pokemonList, printCount, offset = 0) {
+  const onlyFirstEvolution = document.getElementById('onlyFirstEvolution').checked;
   const pokemonArr = pokemonList.pokemon;
   let selected = [];
-
-  console.log(selected);
 
   while (selected.length < printCount) {
     if (onlyFirstEvolution) {
@@ -83,21 +78,9 @@ function showPokemon(pokemonItem, result) {
   document.querySelector('main').appendChild(card);
 }
 
-document.querySelectorAll('input').forEach((el) => {
-  el.addEventListener('change', getInputNumbersAndShow);
-});
-
-function getInputNumbersAndShow(target) {
-  const id = target.srcElement.id;
-  const value = target.srcElement.value;
-
-  if (id === 'startFromNr') {
-    startFromNr = value;
-  }
-
-  if (id === 'printCountNr') {
-    printCountNr = value;
-  }
+function getInputNumbersAndShow() {
+  const printCountNr = document.getElementById('printCountNr').value;
+  const startFromNr = document.getElementById('startFromNr').value;
 
   deleteAllCards();
   printPokemons(pokemons, printCountNr, startFromNr);
@@ -110,6 +93,4 @@ function deleteAllCards() {
   }
 }
 
-// printPokemons(pokemons, 5, 0);
-console.log('+++++');
-// printPokemons(pokemons, 5, 0);
+document.getElementById('showNow').addEventListener('click', getInputNumbersAndShow);

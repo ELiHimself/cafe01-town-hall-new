@@ -23,6 +23,10 @@ header {
     font-size: 18px;
     margin-right: auto;
   }
+
+  button {
+    margin-top: 20px;
+  }
 }
 
 main {
@@ -30,6 +34,7 @@ main {
   grid-template-columns: repeat(auto-fit, 200px);
   gap: 20px;
   margin-top: 20px;
+  margin-left: 20px;
 
   .card {
     display: flex;

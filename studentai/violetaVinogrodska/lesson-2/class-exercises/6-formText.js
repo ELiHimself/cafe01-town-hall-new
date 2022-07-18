@@ -1,5 +1,5 @@
-function formText(){
-    return formText.replace(/[^\d.-]/g, "");
+function formText(string, number){
+    return string.slice(0, number*(-1));
 };
 console.log(formText["Hello world", 3]);
 

@@ -17,7 +17,7 @@ console.log(greet());
 // void function with one parameter
 
 function callOut(name) {
-    return `ahoy mister ${ name}`;
+    return `ahoy mister ${name}`;
 }
 
 const callOutLoud = callOut(name);

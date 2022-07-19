@@ -1,5 +1,5 @@
-const pets = ["cat", "dog", "rat"];
-for (let i = 0; i <= 2; i++) {
+const pets = ["cat", "dog", "rat", "snake", "chamelion"];
+for (let i = 0; i <= pets[i]; i++) {
   pets[i] = pets[i] + "s";
 }
 console.log(pets);

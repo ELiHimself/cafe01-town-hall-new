@@ -52,3 +52,13 @@ function decrement(a) {
   return --a;
 }
 console.log(decrement(10));
+
+function myFunction(str) {
+  return str.slice(str.length - 3);
+}
+console.log(myFunction('helloWorld'));
+
+function sayHello() {
+  return 'Hello World!';
+}
+console.log(sayHello());

@@ -1,6 +1,5 @@
 function getMin(array) {
     const minimum = array.sort((a, b) => a - b);
-
     return {
         min: minimum[0],
     };

@@ -694,3 +694,14 @@ for (let i = 1; i <= 9; i += 2){                         //pushes "odd" numbers 
 }                                                        //because let i = 1; will start from 1 (instead of 0) and +=2 will add 2 every time
                                                          //the cycle repeats until it gets to 9, because i <= 9;
 
+                                                         //add array elements to total, by adding each element to each other to get total of 20
+const myArr = [2, 3, 4, 5, 6];                           //because total = 0; so 0 + 2 + 3 + 4 + 5 + 6 = 20
+                                                         //                          |     myArr     |
+let total = 0;
+
+for (let i = 0; i < myArr.length; i++) {                 //let i = 0 (it starts from 0(index = 0), then i is smaller than myArr.length( length is how many
+  total += myArr[i];                                     //elements are in the array (2, 3, 4, 5, 6) = 5 elements), i++ adds a new cycle to i until it
+}                                                        //reaches the size of myArr.length, so when i = 5 it stops the cycle).
+                                                         //then "total" gets the total of all the elements in myArr added to each other.
+
+

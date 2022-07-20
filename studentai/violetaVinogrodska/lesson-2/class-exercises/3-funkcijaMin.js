@@ -1,9 +1,15 @@
-function getMin(array) {
-    const minimum = array.sort((a, b) => a - b);
-    return {
-        min: minimum[0],
-    };
+// function getMin(array) {
+//     const minimum = array.sort((a, b) => a - b);
+//     return {
+//         min: minimum[0],
+//     };
+// };
+function min(a, b) {
+    if (a>b) {  
+        return b;
+    }
+        return a;
 };
-console.log(getMin([5, 6]));
-console.log(getMin([10,4]));
-console.log(getMin([3,-1]));
+console.log(min(5, 6));
+console.log(min(10,4));
+console.log(min(3,-1));

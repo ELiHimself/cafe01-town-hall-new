@@ -96,7 +96,7 @@ console.log(showNickName(5, 9));
 
 // Uzduotis 6 ---------------
 
-let carMaker = 'VW';
+let carMaker = 'Opel';
 let carYear = 1999;
 
 if (carMaker === 'Audi' || carMaker === 'BMW' || carMaker === 'Opel' || carMaker === 'VW') {
@@ -108,3 +108,41 @@ if (carMaker === 'Audi' || carMaker === 'BMW' || carMaker === 'Opel' || carMaker
     console.log(`Automobilis ${carMaker} yra 20 metu ir senesnis`);
   }
 }
+
+// Uzduotis 6v2 --------------- NETIKRINTI, NEBAIGTA
+
+// const carMakers = ['Audi', 'BMW', 'Opel', 'VW'];
+// const thisYear = new Date().getFullYear();
+
+// function getYearNaming(year) {
+//   if (year.toString()[year.toString().length - 1] == 1) {
+//     return year + ' metas';
+//   } else if (year > 1 && year < 10) {
+//     return year + ' metai';
+//   } else if (year >= 10) {
+//     return year + ' metu';
+//   }
+// }
+
+// function getCarInfo(carMaker, carYear) {
+//   if (carMakers.includes(carMaker)) {
+//     return `Automobiliui ${carMaker} yra ${getYearNaming(thisYear - carYear)}`;
+//   }
+// }
+
+// for (let i = 10; i < 23; i++) {
+//   console.log(getCarInfo('VW', `20${i}`));
+// }
+
+// Uzduotis Papildoma 1
+
+function arKeliamiejiMetai(year) {
+  if ((year % 4 === 0 && !year % 100 === 0) || year % 400 === 0) {
+    return true;
+  }
+
+  return false;
+}
+
+console.log(arKeliamiejiMetai(2008));
+console.log(arKeliamiejiMetai(2009));

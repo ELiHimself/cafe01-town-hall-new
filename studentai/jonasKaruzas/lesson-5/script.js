@@ -151,15 +151,17 @@ function daysInMonthByYear(year, month) {
   const thirtyOneDays = [1, 3, 5, 7, 8, 10, 12];
   const thirtyDays = [4, 6, 9, 11];
 
+  let result = `${year} metais, ${month} menuo turi`;
+
   if (thirtyOneDays.includes(month)) {
-    return `${year} metais, ${month} menuo turi 31 dieną`;
+    return result + '31 dieną';
   } else if (thirtyDays.includes(month)) {
-    return `${year} metais, ${month} menuo turi 30 dienų`;
+    return result + '30 dienų';
   } else if (month === 2) {
     if (arKeliamiejiMetai(year)) {
-      return `${year} metais, ${month} menuo turi 29 dienas`;
+      return result + '29 dienas';
     } else {
-      return `${year} metais, ${month} menuo turi 28 dienas`;
+      return result + '28 dienas';
     }
   } else {
     return 'Neteisingai nurodytas menuo';

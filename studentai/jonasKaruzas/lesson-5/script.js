@@ -37,3 +37,27 @@ if (number % 2 === 0) {
 } else {
   console.log('nelyginis');
 }
+
+// Uzduotis 4 ---------------
+
+function kokiaMuzikosGrupe(num) {
+  if (num === 0) {
+    return 'ne grupe';
+  } else if (num === 1) {
+    return 'solo';
+  } else if (num === 2) {
+    return 'duetas';
+  } else if (num === 3) {
+    return 'trio';
+  } else if (num === 4) {
+    return 'kvartetas';
+  } else if (num > 4) {
+    return 'didele grupe';
+  } else {
+    return 'nu jau kazkas super negerai :(';
+  }
+}
+
+for (let i = 0; i < 7; i++) {
+  console.log(kokiaMuzikosGrupe(i));
+}

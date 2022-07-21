@@ -1,4 +1,4 @@
-let band = 5;
+let band = 3;
 
 if (band <= 0) {
     console.log("ne grupe");

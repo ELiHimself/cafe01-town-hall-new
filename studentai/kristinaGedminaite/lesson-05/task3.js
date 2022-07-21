@@ -1,7 +1,7 @@
 let number = 25;
 
 if (number % 2 === 0) {
-    return "lyginis";
+    console.log("lyginis");
 } else {
-    return "nelyginis";
+    console.log("nelyginis");
 }

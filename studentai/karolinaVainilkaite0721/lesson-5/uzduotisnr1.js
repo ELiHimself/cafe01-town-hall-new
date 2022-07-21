@@ -7,3 +7,5 @@ if (money > price){
 }else{
     console.log("That's not enough, you still owe me money")
 }
+
+//answer "That's not enough, you still owe me money"

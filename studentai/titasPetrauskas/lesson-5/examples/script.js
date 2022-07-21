@@ -15,7 +15,7 @@ const objectExample = {a: 1, b: 2, c: 3, d: 4,}; // true
 const arrayExample = ['lalala', 123, 'example']; //true
 const undefinedExample = undefined; //false
 const nullExample = null; //false
-const symbolExample = '%'; //true, bet sito nesupratau kaip ta simboli pavaizduoti nes cia visgi realiai stringas gaunasi? O kitaip jo parasyti neleidzia, meta error
+const symbolExample = Symbol('?'); //true
 
 
 if (symbolExample) {

@@ -305,35 +305,39 @@ function abTest(a, b) {
   
   abTest(2,2);
 
-                                                        //blackjack counting function with switch statement
+/** Uzduotis Pradzia */                                 //blackjack counting function with switch statement
 
-  let count = 0;
+let count = 0;
 
 function cc(card) {
-switch (card) {
-  case 2:
-  case 3:
-  case 4:
-  case 5:
-  case 6:
-    count++;
-  break;
-  case 10:
-  case 'J':
-  case 'Q':
-  case 'K':
-  case 'A':
-    count--;
-  break;
-}
-var holdBet = 'Hold';
-if (count > 0){
-  holdBet = 'Bet';
-}
+  switch (card) {
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+      count++;
+      break;
+    case 10:
+    case 'J':
+    case 'Q':
+    case 'K':
+    case 'A':
+      count--;
+      break;
+  }
+
+  let holdBet = 'Hold';
+  if (count > 0){
+    holdBet = 'Bet';
+  }
+
   return count + " " + holdBet;
 }
 
 cc(2); cc(3); cc(7); cc('K'); cc('A');
+
+/** Uzduotis pabaiga */
 
                                                          //Objects
 
@@ -656,9 +660,48 @@ function updateRecords(records, id, prop, value) {
   return records;
 }
 
-updateRecords(recordCollection, 5439, 'artist', 'ABBA'); //artist should be the string ABBA
-updateRecords(recordCollection, 5439, "tracks", "Take a Chance on Me"); //tracks should have the string Take a Chance on Me as the last and only element.
-updateRecords(recordCollection, 2548, "artist", ""); //artist should not be set (deleted)
-updateRecords(recordCollection, 2468, "tracks", "Free"); //tracks should have the string 1999 as the first element.
-updateRecords(recordCollection, 2548, "tracks", ""); //tracks should not be set
-updateRecords(recordCollection, 1245, "albumTitle", "Riptide"); //albumTitle should be the string Riptide
+console.log(updateRecords(recordCollection, 5439, 'artist', 'ABBA')); //artist should be the string ABBA
+console.log(updateRecords(recordCollection, 5439, "tracks", "Take a Chance on Me")); //tracks should have the string Take a Chance on Me as the last and only element.
+console.log(updateRecords(recordCollection, 2548, "artist", "")); //artist should not be set (deleted)
+console.log(updateRecords(recordCollection, 2468, "tracks", "Free")); //tracks should have the string 1999 as the first element.
+console.log(updateRecords(recordCollection, 2548, "tracks", "")); //tracks should not be set
+console.log(updateRecords(recordCollection, 1245, "albumTitle", "Riptide")); //albumTitle should be the string Riptide
+
+// while loops
+
+const ourArray = [];
+let i = 0;
+        //\/---------------------------                  //
+while (i < 5) {                     //|                  //In the code example above, the while loop will execute 5 times
+  ourArray.push(i);                 //|                     //and append the numbers 0 through 4 to ourArray.   //^
+  i++;                              //|                     //so console will print myArray[0, 1, 2, 3, 4]      //|
+}                                   //---------------------------------------------------|  ^  ^  ^  ^  ^  |    //|
+                                                                                       //|  1  2  3  4  5  |    //|
+                                                                                       //|5 times excecuted|-------
+const myArray = [];
+let i = 0;                                               //same while loop, but this time (i <=5) which means it will print 
+while (i <= 5) {                                         //[0, 1, 2, 3, 4, 5]
+  myArray.push(i);                                       //but the task requires to print the array in descending
+  i++;
+}
+console.log(myArray.reverse());                          //so .reverse comes in handy to flip the array.
+
+// Setup
+const myArray = [];
+
+for (let i = 1; i <= 9; i += 2){                         //pushes "odd" numbers to myArray
+  myArray.push(i);                                       //so myArray will have [1, 3, 5, 7, 9];
+}                                                        //because let i = 1; will start from 1 (instead of 0) and +=2 will add 2 every time
+                                                         //the cycle repeats until it gets to 9, because i <= 9;
+
+                                                         //add array elements to total, by adding each element to each other to get total of 20
+const myArr = [2, 3, 4, 5, 6];                           //because total = 0; so 0 + 2 + 3 + 4 + 5 + 6 = 20
+                                                         //                          |     myArr     |
+let total = 0;
+
+for (let i = 0; i < myArr.length; i++) {                 //let i = 0 (it starts from 0(index = 0), then i is smaller than myArr.length( length is how many
+  total += myArr[i];                                     //elements are in the array (2, 3, 4, 5, 6) = 5 elements), i++ adds a new cycle to i until it
+}                                                        //reaches the size of myArr.length, so when i = 5 it stops the cycle).
+                                                         //then "total" gets the total of all the elements in myArr added to each other.
+
+

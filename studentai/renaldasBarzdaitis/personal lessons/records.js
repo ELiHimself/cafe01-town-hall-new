@@ -21,16 +21,22 @@ const recordCollection = {
 
 // Only change code below this line
 function updateRecords(records, id, prop, value) {
-  if (prop !== 'tracks' && value !== "") {
+  if (prop !== "tracks" && "value" !==""){
     records[id][prop] = value;
-  } else if (prop === "tracks" && records[id].hasOwnProperty("tracks") === false) {
+  }else if (prop === "tracks" && records[id].tracks === undefined){
     records[id][prop] = [value];
-  } else if (prop === "tracks" && value !== "") {
-    records[id][prop].push(value);
-  } else if (value === "") {
-    delete records[id][prop];
+  }else if (prop === "tracks" && value !==""){
+    records[id][prop] = [value];
+  }else if (value === "");{
+    delete records[id].prop;
   }
   return records;
 }
 
-updateRecords(recordCollection, 5439, 'artist', 'ABBA');
+
+console.log(updateRecords(recordCollection, 5439, 'artist', 'ABBA'));
+console.log(updateRecords(recordCollection, 5439, "tracks", "Take a Chance on Me"));
+console.log(updateRecords(recordCollection, 2548, "artist", "")); 
+console.log(updateRecords(recordCollection, 2548, "tracks", ""));
+console.log(updateRecords(recordCollection, 2468, "tracks", "Free"));
+console.log(updateRecords(recordCollection, 1245, "albumTitle", "Riptide"));

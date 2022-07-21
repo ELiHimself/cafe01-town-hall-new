@@ -1,5 +1,5 @@
 let muzikantai = 3
-if (muzikantai === 0) {
+if (muzikantai <= 0) {
     console.log("ne grupė");
 } else if (muzikantai === 1) {
     console.log("solo");
@@ -9,6 +9,6 @@ if (muzikantai === 0) {
     console.log("trio");
 } else if (muzikantai === 4) {
     console.log("kvartetas");
-} else if (muzikantai > 5) {
+} else {
     console.log("didelė grupė");
 }

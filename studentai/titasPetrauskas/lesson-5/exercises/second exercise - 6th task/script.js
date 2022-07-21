@@ -1,4 +1,4 @@
-let carMaker = 'Seat';
+let carMaker = 'Peugeot';
 let carYear = 2005;
 
 function carYearCounter(carYear, carMaker) {
@@ -13,10 +13,15 @@ function carYearCounter(carYear, carMaker) {
   }
 }
 
-if (carMaker === 'BMW' || carMaker === 'Audi' || carMaker === 'Opel' || carMaker === 'Volkswagen') {
+function isInDatabase(carMaker) {
+  if (carMaker === 'BMW' || carMaker === 'Audi' || carMaker === 'Opel' || carMaker === 'Volkswagen') {
+    return true;
+  } 
+  return false;
+}
+
+if (isInDatabase(carMaker)) {
   carYearCounter(carYear, carMaker);
 } else {
   console.log (`The car brand \"${carMaker}\" is not in the database.`);
 }
-
-// Does the work. Ar per daug paprastai cia visgi?

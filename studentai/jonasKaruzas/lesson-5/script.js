@@ -151,7 +151,7 @@ function daysInMonthByYear(year, month) {
   const thirtyOneDays = [1, 3, 5, 7, 8, 10, 12];
   const thirtyDays = [4, 6, 9, 11];
 
-  let result = `${year} metais, ${month} menuo turi`;
+  let result = `${year} metais, ${month} menuo turi `;
 
   if (thirtyOneDays.includes(month)) {
     return result + '31 dieną';

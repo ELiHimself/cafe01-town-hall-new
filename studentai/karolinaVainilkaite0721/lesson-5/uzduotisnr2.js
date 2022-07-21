@@ -14,6 +14,6 @@ if (position === 1){
 }
 
 const lasWord = position <=3 ? 'medal' : ''
-console.log(runner + "received a" + medal + lasWord + '.');
+console.log(runner + " received a " + medal + lasWord + '.');
 
 //answer silver medal

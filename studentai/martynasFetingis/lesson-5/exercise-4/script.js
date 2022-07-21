@@ -9,9 +9,9 @@ function musicGroup(ppl) {
     return 'trio';
   } else if (ppl === 4) {
     return 'kvartetas';
-  } else if (ppl > 4) {
+  } else {
     return 'didelė grupė';
   }
 }
 
-console.log(musicGroup(3));
+console.log(musicGroup(7));

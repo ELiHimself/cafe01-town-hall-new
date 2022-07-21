@@ -93,3 +93,18 @@ console.log(showNickName(5, 6));
 console.log(showNickName(5, 7));
 console.log(showNickName(5, 8));
 console.log(showNickName(5, 9));
+
+// Uzduotis 6 ---------------
+
+let carMaker = 'VW';
+let carYear = 1999;
+
+if (carMaker === 'Audi' || carMaker === 'BMW' || carMaker === 'Opel' || carMaker === 'VW') {
+  if (carYear >= 2010 && carYear <= 2020) {
+    console.log(`Automobilis ${carMaker} yra 10 metu`);
+  } else if (carYear >= 2000 && carYear <= 2010) {
+    console.log(`Automobilis ${carMaker} yra 20 metu`);
+  } else if (carYear < 2000) {
+    console.log(`Automobilis ${carMaker} yra 20 metu ir senesnis`);
+  }
+}

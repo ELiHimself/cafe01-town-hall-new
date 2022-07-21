@@ -11,4 +11,6 @@ if (position === 1) {
 } else {
   medal = "pat on the back.";
 }
-console.log(runner + "received a " + medal);
+console.log(runner + " received a " + medal);
+
+// SILVER MEDAL

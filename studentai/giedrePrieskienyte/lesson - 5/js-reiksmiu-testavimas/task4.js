@@ -1,6 +1,6 @@
-let group = 2;
+let group = 6;
 
-if (group >= 0){
+if (group <= 0){
     console.log("ne grupe");
 } else if(group === 1){
     console.log("solo");
@@ -10,7 +10,8 @@ if (group >= 0){
     console.log("trio");
 } else if (group === 4){
     console.log("kvartetas");
-} else if (group <= 4){
+} else if (group >= 4){
     console.log("didele grupe");
 }
+
 

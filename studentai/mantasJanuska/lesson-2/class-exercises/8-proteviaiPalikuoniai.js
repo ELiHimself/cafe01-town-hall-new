@@ -40,37 +40,17 @@ const fm = {
 }
 
 function getGeneration(num, gender) {
-    let result = " ";
+    
     const table = {
-        "-3": {
-            m: 'Grand grandfather',
-            f: 'Grand grandmother is grand',
-        },
-        "-2": {
-            m: 'Hello grandfather',
-            f: 'Hello grandmother',
-        },
-        "-1": {
-            m: 'No, i am your father',
-            f: 'dont talk with your mother like that',
-        },
-        "0": {
-            m: 'it\'s a me Mario',
-            f: 'it\'s a me Princes Peach',
-        },
-        "1": {
-            m: 'Welcome my son!',
-            f: 'Welcome my daughter!',
-        },
-        "2": {
-            m: 'Im too young to have a grandson',
-            f: 'Im too young to have a granddauther',
-        },
-        "3": {
-            m: 'Grandson you are great',
-            f: 'Granddauhter, you are great',
-        },
+        "-3": {m: 'Grand grandfather', f: 'Grand grandmother is grand',},
+        "-2": {m: 'Hello grandfather', f: 'Hello grandmother',},
+        "-1": {m: 'No, i am your father', f: 'dont talk with your mother like that',},
+        "0": {m: 'it\'s a me Mario', f: 'it\'s a me Princes Peach',},
+        "1": {m: 'Welcome my son!',f: 'Welcome my daughter!',},
+        "2": {m: 'Im too young to have a grandson',f: 'Im too young to have a granddauther',},
+        "3": {m: 'Grandson you are great', f: 'Granddauhter, you are great',},
     }
-    return table[num, gender]
+    return table[num][gender]
 }
-getGeneration(3, "m");
+
+console.log(getGeneration(3, "f"));

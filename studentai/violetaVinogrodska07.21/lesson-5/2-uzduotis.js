@@ -15,3 +15,13 @@ if(position === 1){
     medal = 'pat on the back';
     console.log(runner + ' ' + medal);
 }
+//Kitas sprendimo budas, be console.log kiekvienam else if!
+// const lastWord = position <= 3 ? ' medal' : '';
+// console.log(runner + ' received a ' + medal + lastWord + '.');
+
+//dar vienas budas!
+//if (position <= 3) {
+//     console.log(runner + ' received a ' + medal + ' medal.');
+// } else {
+//     console.log(runner + ' ' + medal);
+// }

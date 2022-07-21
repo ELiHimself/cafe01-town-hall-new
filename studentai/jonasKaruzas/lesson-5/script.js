@@ -146,3 +146,32 @@ function arKeliamiejiMetai(year) {
 
 console.log(arKeliamiejiMetai(2008));
 console.log(arKeliamiejiMetai(2009));
+
+function daysInMonthByYear(year, month) {
+  const thirtyOneDays = [1, 3, 5, 7, 8, 10, 12];
+  const thirtyDays = [4, 6, 9, 11];
+
+  if (thirtyOneDays.includes(month)) {
+    return `${year} metais, ${month} menuo turi 31 dieną`;
+  } else if (thirtyDays.includes(month)) {
+    return `${year} metais, ${month} menuo turi 30 dienų`;
+  } else if (month === 2) {
+    if (arKeliamiejiMetai(year)) {
+      return `${year} metais, ${month} menuo turi 29 dienas`;
+    } else {
+      return `${year} metais, ${month} menuo turi 28 dienas`;
+    }
+  } else {
+    return 'Neteisingai nurodytas menuo';
+  }
+}
+
+for (let i = 1; i < 10; i++) {
+  console.log(daysInMonthByYear(`200${i}`, 2));
+}
+for (let i = 1; i < 10; i++) {
+  console.log(daysInMonthByYear(`200${i}`, 1));
+}
+for (let i = 1; i < 10; i++) {
+  console.log(daysInMonthByYear(`200${i}`, 4));
+}

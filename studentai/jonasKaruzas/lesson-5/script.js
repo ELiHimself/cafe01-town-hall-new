@@ -41,7 +41,7 @@ if (number % 2 === 0) {
 // Uzduotis 4 ---------------
 
 function kokiaMuzikosGrupe(num) {
-  if (num === 0) {
+  if (num <= 0) {
     return 'ne grupe';
   } else if (num === 1) {
     return 'solo';
@@ -61,3 +61,35 @@ function kokiaMuzikosGrupe(num) {
 for (let i = 0; i < 7; i++) {
   console.log(kokiaMuzikosGrupe(i));
 }
+
+// Uzduotis 5 ---------------
+
+const answers = ['Hole-in-one!', 'Eagle', 'Birdie', 'Par', 'Bogey', 'Double Bogey', 'Go Home!'];
+
+function showNickName(par, strokes) {
+  if (strokes === 1) {
+    return answers[0];
+  } else if (par - 2 >= strokes) {
+    return answers[1];
+  } else if (par - 1 === strokes) {
+    return answers[2];
+  } else if (par === strokes) {
+    return answers[3];
+  } else if (par + 1 === strokes) {
+    return answers[4];
+  } else if (par + 2 === strokes) {
+    return answers[5];
+  } else if (par + 3 <= strokes) {
+    return answers[6];
+  }
+}
+
+console.log(showNickName(5, 1));
+console.log(showNickName(5, 2));
+console.log(showNickName(5, 3));
+console.log(showNickName(5, 4));
+console.log(showNickName(5, 5));
+console.log(showNickName(5, 6));
+console.log(showNickName(5, 7));
+console.log(showNickName(5, 8));
+console.log(showNickName(5, 9));

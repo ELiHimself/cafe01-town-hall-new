@@ -11,3 +11,6 @@ Boolean(null) //false
 Boolean(1 === 1) // true
 Boolean(1 === 5) //false
 Boolean(5 > 6 || 4 > 5) //false
+Boolean(Boolean) //true
+Boolean(function() {}) //true
+

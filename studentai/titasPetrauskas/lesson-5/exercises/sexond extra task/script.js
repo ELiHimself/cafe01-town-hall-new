@@ -12,7 +12,7 @@ function daysInMonth(year, month) {
   } else if (month.toLowerCase() === 'april' || month.toLowerCase() === 'june' || month.toLowerCase() === 'september' || month.toLowerCase() === 'november') {
     return `${month.charAt(0).toUpperCase() + month.slice(1)} has 30 days`;
   } else if (month.toLowerCase() === 'february') {
-    if (leapYear === true) {
+    if (leapYear(year) === true) {
       return `${month.charAt(0).toUpperCase() + month.slice(1)} has 29 days`;
     }
     return `${month.charAt(0).toUpperCase() + month.slice(1)} has 28 days`;

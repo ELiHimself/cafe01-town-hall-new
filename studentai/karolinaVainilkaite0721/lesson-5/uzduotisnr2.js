@@ -2,6 +2,7 @@ let runner = "Kendyll";
 let position = 2;
 let medal;
 
+
 if (position === 1){
     medal = "gold"
 }else if(position === 2){
@@ -12,6 +13,7 @@ if (position === 1){
     medal = "pat on the back"
 }
 
-console.log(runner + "received a" + medal+ "medal");
+const lasWord = position <=3 ? 'medal' : ''
+console.log(runner + "received a" + medal + lasWord + '.');
 
 //answer silver medal

@@ -1,6 +1,9 @@
-const golfNames = ["hole-in-one", "eagle", "birdie", "Par", "bogey", "double bogey", "go Home!"];
+
 
 function score(par, hits) {
+
+    const golfNames = ["hole-in-one", "eagle", "birdie", "Par", "bogey", "double bogey", "go Home!"];
+
     if (hits === 1){
         return golfNames[0];
     }else if (hits <= par - 2) {
@@ -18,4 +21,4 @@ function score(par, hits) {
     }
 
 }
-console.log(score(5, 4));
+console.log(score(6, 4));

@@ -12,7 +12,7 @@ console.log(greeting);*/
 }
 
 const greeting= greet();
-console.log(greet());
+console.log(greeting());
 
 // void function with one parameter
 
@@ -21,7 +21,7 @@ function callOut(name) {
 }
 
 const callOutLoud = callOut(name);
-console.log(callOut("Mantas"));
+console.log(callOutLoud("Mantas"));
 
 // return current date
 
@@ -38,7 +38,7 @@ function add(a, b, c, d){
     add = a + b + c + d;
 }
 const sum = add(1, 2, 3, 4);
-console.log(add);
+console.log(sum);
 
 //Chalange 2
 

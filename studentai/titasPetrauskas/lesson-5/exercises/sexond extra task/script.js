@@ -21,13 +21,14 @@ function daysInMonth(year, month) {
 
 
 // 2nd try
+
 // function daysInMonth(year, month) {
 //   if (month === 'january' || month === 'march' || month === 'may' || month === 'july' || month === 'august' || month === 'october' || month === 'december') {
 //     return `${month} has 31 day`;
 //   } else if (month === 'april' || month === 'june' || month === 'september' || month === 'november') {
 //     return `${month} has 30 days`;
 //   } else if (month === 'february') {
-//     if (leapYear === true) {
+//     if (leapYear(year) === true) {
 //       return `${month} has 29 days`;
 //     }
 //     return `${month} has 28 days`;

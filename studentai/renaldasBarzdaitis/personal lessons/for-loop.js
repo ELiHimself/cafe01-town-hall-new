@@ -36,3 +36,52 @@ for (let i = 0; i < myArr.length; i++) {                 //let i = 0 (it starts 
 }                                                        //reaches the size of myArr.length, so when i = 5 it stops the cycle).
                                                          //then "total" gets the total of all the elements in myArr added to each other.
 
+// recursion loop
+
+//for loop example
+function multiply(arr, n) {
+  let product = 1;
+  for (let i = 0; i < n; i++) {
+    product *= arr[i];
+  }
+  return product; 
+}
+
+//recursion example
+function multiply(arr, n) {                              //The recursive version of multiply breaks down like this.
+  if (n <= 0) {                                          //In the base case, where n <= 0, it returns 1. For larger values of n, it calls itself, but with n - 1.
+    return 1;                                            //That function call is evaluated in the same way, calling multiply again until n <= 0.
+  } else {                                               //At this point, all the functions can return and the original multiply returns the answer.
+    return multiply(arr, n - 1) * arr[n - 1];
+  }                                                      //Recursive functions must have a base case when they return without calling the function again 
+}                                                        //(in this example, when n <= 0), otherwise they can never finish executing.
+
+//more recursion examples
+
+function sum(arr, n) {
+if (n <= 0) {
+  return 0;
+} else {
+  return sum(arr, n - 1) + arr[n - 1];
+}
+}
+
+//The function should return an array of integers which begins with a number represented by the startNum parameter 
+//and ends with a number represented by the endNum parameter. The starting number will always be less than or equal to the ending number. 
+//Your function must use recursion by calling itself and not use loops of any kind. 
+//It should also work for cases where both startNum and endNum are the same.
+
+function rangeOfNumbers(startNum, endNum) {
+  if (endNum - startNum === 0) {
+  return [startNum];
+  }
+  const arr = rangeOfNumbers(startNum, endNum - 1);
+    arr.push(endNum);
+    return arr;
+};
+
+rangeOfNumbers(1, 5)
+
+//rangeOfNumbers(1, 5) should return [1, 2, 3, 4, 5].
+//rangeOfNumbers(6, 9) should return [6, 7, 8, 9].
+//rangeOfNumbers(4, 4) should return [4].

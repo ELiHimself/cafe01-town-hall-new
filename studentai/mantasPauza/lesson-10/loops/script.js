@@ -33,3 +33,11 @@ const getHighestNumber = (...args) => {
 }
 
 console.log(getHighestNumber(1, 20, 3));
+
+// ***************************************** Fourth exercise
+
+
+for (let i = 9; i >= 1; i--) {
+    console.log('hello ' + i);
+}
+

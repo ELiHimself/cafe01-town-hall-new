@@ -1,9 +1,11 @@
 function getLaugh(times) {
+    let laugh = "";
     for (let i = 0; i < times; i++){
-        let laugh = "ha";
-        times += laugh;
+        laugh += "ha";
     }
-    return "!";
+    return laugh;
 }
 
 console.log(getLaugh(5));
+
+//nu gerai, dabar logiskiau

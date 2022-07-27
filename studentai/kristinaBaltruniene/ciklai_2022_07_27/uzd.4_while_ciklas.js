@@ -5,8 +5,6 @@
 // x = x - 1;
 // }
 
-let x = 9;
-for (let i = 0; i < x; i++) {
-  
-    console.log(x-i);
+for (let x = 9; 0 < x; x--) {
+    console.log("hello" + x);
 }

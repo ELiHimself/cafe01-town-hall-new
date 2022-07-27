@@ -118,19 +118,17 @@ function createTreeRow(currentRow, allRows) {
   const starCount = currentRow * 2 - 1;
   result = '';
 
-  for (let i = 0; i < spaceCount; i++) {
-    result += ' ';
-  }
-
-  for (let i = 0; i < starCount; i++) {
-    result += '*';
-  }
-
-  for (let i = 0; i < spaceCount; i++) {
-    result += ' ';
-  }
+  result += ' '.repeat(spaceCount);
+  result += '*'.repeat(starCount);
+  result += ' '.repeat(spaceCount);
 
   return result;
 }
 
 createTree3(5);
+
+// 1   4T 1Z 4T
+// 2   3T 3Z 3T
+// 3   2T 5Z 2T
+// 4   1T 7Z 1T
+// 5   0T 9Z 0T

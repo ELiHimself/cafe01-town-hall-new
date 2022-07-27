@@ -67,6 +67,7 @@ function createTree2(height) {
   let result = '';
   let starCount = 1;
   let spaceLength = height;
+  let finalResult = '';
 
   for (let i = 1; i < height + 1; i++) {
     for (let k = spaceLength; k > 0; k--) {
@@ -79,9 +80,11 @@ function createTree2(height) {
 
     spaceLength--;
     starCount += 2;
-    console.log(result + '\n');
+    finalResult += result + '\n';
     result = '';
   }
+
+  return finalResult;
 }
 
-createTree2(5);
+console.log(createTree2(5));

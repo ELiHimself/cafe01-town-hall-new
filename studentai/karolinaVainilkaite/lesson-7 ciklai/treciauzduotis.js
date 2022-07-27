@@ -5,5 +5,6 @@ function getHighestNumber(...arg){
             max = arg[i];     
         }
     }
+    return max;
 }
 console.log(getHighestNumber(34, 7, 8, 55, 6, 7, 9, 52, 56));

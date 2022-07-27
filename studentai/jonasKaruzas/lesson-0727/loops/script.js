@@ -104,3 +104,33 @@ function createTree2(height) {
 }
 
 console.log(createTree2(5));
+
+// uzduotis 5v3 ---------------
+
+function createTree3(height) {
+  for (let i = 1; i < height + 1; i++) {
+    console.log(createTreeRow(i, height));
+  }
+}
+
+function createTreeRow(currentRow, allRows) {
+  const spaceCount = allRows - currentRow;
+  const starCount = currentRow * 2 - 1;
+  result = '';
+
+  for (let i = 0; i < spaceCount; i++) {
+    result += ' ';
+  }
+
+  for (let i = 0; i < starCount; i++) {
+    result += '*';
+  }
+
+  for (let i = 0; i < spaceCount; i++) {
+    result += ' ';
+  }
+
+  return result;
+}
+
+createTree3(5);

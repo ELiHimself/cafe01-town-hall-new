@@ -41,3 +41,21 @@ for (let i = 9; i >= 1; i--) {
     console.log('hello ' + i);
 }
 
+// ***************************************** Fifth exercise 
+
+function createTree(height) {
+    for ( var i = 0; i < height ; i++ ) {
+        let branch = '+';
+        let space = ' ';
+
+        for ( let j = 1; j <= i; j++ ) {
+            branch = branch + '++';            
+        }
+           
+        let spacesBefore = space.repeat(height-i-1);
+        branch = spacesBefore + branch;
+        console.log(branch);
+    }
+}
+
+createTree(5);

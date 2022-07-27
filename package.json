@@ -16,7 +16,7 @@
     "url": "https://github.com/ELiHimself/cafe01-town-hall-new/issues"
   },
   "homepage": "https://github.com/ELiHimself/cafe01-town-hall-new#readme",
-  "dependencies": {
-    "prettier": "^2.7.1"
+  "devDependencies": {
+    "prettier": "2.7.1"
   }
 }

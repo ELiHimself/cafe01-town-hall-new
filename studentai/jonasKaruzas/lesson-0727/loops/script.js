@@ -17,3 +17,11 @@ function getLaugh(amount) {
 }
 
 console.log(getLaugh(5));
+
+// uzduotis 3 ---------------
+
+const getHighestNumber = (...args) => {
+  return args.sort((a, b) => a - b)[args.length - 1];
+};
+
+console.log(getHighestNumber(34, 7, 8, 55, 6, 7, 9, 52, 56));

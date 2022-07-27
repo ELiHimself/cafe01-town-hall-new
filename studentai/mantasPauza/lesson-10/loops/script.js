@@ -19,3 +19,17 @@ function getLaugh(amount) {
 }
 
 console.log(getLaugh(5));
+
+// ***************************************** Third exercise
+
+const getHighestNumber = (...args) => {
+    let highest = 0;
+    for (let i = 0; i < args.length; i++) {
+        if (highest < args[i]) {
+            highest = args[i];
+        }
+    }
+    return highest;
+}
+
+console.log(getHighestNumber(1, 20, 3));

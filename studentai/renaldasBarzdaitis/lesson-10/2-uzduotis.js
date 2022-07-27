@@ -1,7 +1,7 @@
-function getLaugh(amount) {
-    for (let i = 0; i < amount; i++){
+function getLaugh(times) {
+    for (let i = 0; i < times; i++){
         let laugh = "ha";
-        amount += laugh;
+        times += laugh;
     }
     return "!";
 }

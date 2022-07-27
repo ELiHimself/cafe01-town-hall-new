@@ -26,7 +26,23 @@ const getHighestNumber = (...args) => {
   return args.sort((a, b) => a - b)[args.length - 1];
 };
 
-console.log(getHighestNumber(34, 7, 8, 55, 6, 7, 9, 52, 56));
+console.log(getHighestNumber(34, 7, 8, 55, 6, 7, 99, 9, 52, 56));
+
+// uzduotis 3B ---------------
+
+const getHighestNumber2 = (...args) => {
+  let biggest = 0;
+
+  for (let i = 0; i < args.length; i++) {
+    if (args[i] > biggest) {
+      biggest = args[i];
+    }
+  }
+
+  return biggest;
+};
+
+console.log(getHighestNumber2(34, 7, 8, 55, 6, 7, 99, 9, 52, 56));
 
 // uzduotis 4 ---------------
 

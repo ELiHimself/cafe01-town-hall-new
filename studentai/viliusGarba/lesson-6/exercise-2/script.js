@@ -1,6 +1,6 @@
 function getLaugh(num) {
-  let text = 'ha';
-  for (let i = 1; i < num; i++) {
+  let text = '';
+  for (let i = 0; i < num; i++) {
     text += 'ha';
   }
   console.log(text + '!');

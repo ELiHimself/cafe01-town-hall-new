@@ -66,7 +66,7 @@ for (let x = 9; x >= 1; x--) {
 function createTree2(height) {
   let result = '';
   let starCount = 1;
-  let spaceLength = height;
+  let spaceLength = height - 1;
   let finalResult = '';
 
   for (let i = 1; i < height + 1; i++) {

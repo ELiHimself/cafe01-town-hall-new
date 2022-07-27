@@ -1,8 +1,10 @@
 function getLaugh(amount) {
     let laugh = "";
-    for (i = 0; i < amount; i++);
+    for (i = 0; i < amount; i++) {
+        laugh += "ha"
+    }
     
 }
-console.log(laugh(5));
+console.log(getLaugh(5));
 
 //irgi nesuprantu:')))

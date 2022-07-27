@@ -1,5 +1,5 @@
 function getLaugh(amount) {
-    let result = "ha";
+    let result = "";
     for (let i = 0; i < amount; i++) {
         result += "ha"
     }

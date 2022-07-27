@@ -30,3 +30,9 @@ function getHighestNumber(...args) {
     return max;
 }
 console.log(getHighestNumber(34, 7, 8, 55, 6, 7, 9, 52, 56));
+
+
+//4 uzduotis
+for (let x = 9; x >= 1; x--){
+    console.log('hello ' + x);
+}

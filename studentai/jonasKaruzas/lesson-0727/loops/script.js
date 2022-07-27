@@ -132,3 +132,35 @@ createTree3(5);
 // 3   2T 5Z 2T
 // 4   1T 7Z 1T
 // 5   0T 9Z 0T
+
+// uzduotis 5v4 (zvaigzdutes su tarpais) ---------------
+
+function createTree4(height) {
+  for (let i = 1; i < height + 1; i++) {
+    console.log(createTreeRow2(i, height));
+  }
+}
+
+function createTreeRow2(currentRow, allRows) {
+  const spaceCount = allRows - currentRow;
+  const starCount = currentRow;
+  result = '';
+
+  result += ' '.repeat(spaceCount);
+  result += createStars(currentRow);
+  result += ' '.repeat(spaceCount);
+
+  return result;
+}
+
+function createStars(num) {
+  let result = '*';
+  if (num > 1) {
+    for (let i = 1; i < num; i++) {
+      result += ' *';
+    }
+  }
+  return result;
+}
+
+createTree4(5);

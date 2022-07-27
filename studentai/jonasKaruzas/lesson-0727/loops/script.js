@@ -13,6 +13,8 @@ function getLaugh(amount) {
   for (let i = 0; i < amount; i++) {
     result += 'ha';
   }
+
+  result += '!';
   return result;
 }
 

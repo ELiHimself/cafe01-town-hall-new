@@ -18,6 +18,15 @@ function getLaugh(amount) {
 
 console.log(getLaugh(5));
 
+// ***************************************** wanted to try second exercise with .repeat
+
+function laugh(amount) {
+    let laughing = 'ha';
+    return laughing.repeat(amount) + '!';
+}
+
+console.log(laugh(5));
+
 // ***************************************** Third exercise
 
 const getHighestNumber = (...args) => {
@@ -56,3 +65,16 @@ function createTree(height) {
 }
 
 createTree(5);
+
+
+// ****************************************** Extra exercise 
+
+function jingleBells(height) {
+    for (let i = 0; i < height; i++) {
+      let branches = '+'.repeat(2 * i + 1);
+      let airPocket = ' '.repeat(height - i - 1);
+      console.log(airPocket + branches);
+    }
+}
+
+jingleBells(5);

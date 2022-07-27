@@ -1,8 +1,8 @@
 function getLaugh(num){
     let laugh = ' ';
     for(let i = 0; i < num; i++){
-        laugh += 'ha'
+        laugh += 'ha';
     }
-    return laugh
+    return laugh + '!';
 }
-console.log(getLaugh(5))
+console.log(getLaugh(5));

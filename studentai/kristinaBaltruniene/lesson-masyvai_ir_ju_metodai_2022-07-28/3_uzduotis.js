@@ -2,16 +2,14 @@ let randomArr = [11, 'cat', true, 4, 'mouse', 5, 9, 5, 76, false];
 
 function getArrayByData(array, dataType) {
     let arr = [];
-    // console.log(dataType);
+
     for (let i = 0; i < array.length; i++) {
-        
-        // console.log(typeof(array[i]));
-        if (dataType === typeof (array[i])) {
-           // console.log(array[i]);
-            
-            arr.push(array[i]);            
+
+        if (dataType === typeof(array[i])) {
+
+            arr.push(array[i]);
         }
-    } 
+    }
     return arr
 }
 

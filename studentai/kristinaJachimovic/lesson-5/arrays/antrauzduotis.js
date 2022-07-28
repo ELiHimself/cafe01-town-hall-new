@@ -10,7 +10,7 @@ function getMaxSubSum(arr) {
       // console.log(arr, sum);
     }
   }
-  console.log(sum);
+  return sum;
 }
 
-getMaxSubSum(numbersArr);
+console.log(getMaxSubSum(numbersArr));

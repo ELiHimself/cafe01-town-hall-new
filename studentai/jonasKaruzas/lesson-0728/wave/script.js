@@ -4,9 +4,9 @@ function wave(str) {
 
   for (let i = 0; i < letters.length; i++) {
     if (letters[i] !== ' ') {
-      letters.splice(i, 1, letters[i].toString().toUpperCase());
+      letters.splice(i, 1, letters[i].toUpperCase());
       result.push(letters.slice(0));
-      letters.splice(i, 1, letters[i].toString().toLowerCase());
+      letters.splice(i, 1, letters[i].toLowerCase());
     }
   }
 

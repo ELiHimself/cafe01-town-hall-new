@@ -22,6 +22,17 @@ function getMaxSubSum(arr) {
 
 console.log(getMaxSubSum(numbersArr));
 
+// Uzduotis 2B ------------------
+console.log('Uzduotis 2B --------------');
+
+function getMaxSubSum2(arr) {
+  return arr.reduce((prev, current) => {
+    return current > 0 ? prev + current : prev + 0;
+  }, 0);
+}
+
+console.log(getMaxSubSum2(numbersArr));
+
 // Uzduotis 3 ------------------
 console.log('Uzduotis 3 --------------');
 

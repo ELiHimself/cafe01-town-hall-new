@@ -27,7 +27,7 @@ console.log('Uzduotis 2B --------------');
 
 function getMaxSubSum2(arr) {
   return arr.reduce((prev, current) => {
-    return current > 0 ? prev + current : prev + 0;
+    return current > 0 ? prev + current : prev;
   }, 0);
 }
 

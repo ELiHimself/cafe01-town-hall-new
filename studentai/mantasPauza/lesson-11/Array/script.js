@@ -27,9 +27,9 @@ let numbersArr = [11, -2, 34, 45, 19, -5, 6];
 
 function getMaxSubSum(arr) {
     let sum = 0;
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] > 0) {
-            sum = sum + arr[i];
+    for (number of arr) {
+        if (number > 0) {
+            sum = sum + number;
         }
     }
     return sum;
@@ -44,9 +44,9 @@ let randomArr = [11, 'cat', true, 4, 'mouse', 5, 9, 5, 76, false];
 
 function getArrayByData(array, dataType) {
     let result = [];
-    for (let i = 0; i < array.length; i++) {
-        if (typeof (array[i]) === dataType) {
-         result.push(array[i])
+    for (item of array) {
+        if (typeof item === dataType) {
+         result.push(item)
         }
     }
     return result;

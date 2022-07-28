@@ -30,19 +30,26 @@ console.log(getMaxSubSum(numbersArr));
 let randomArr = [11, 'cat', true, 4, 'mouse', 5, 9, 5, 76, false];
 
 function getArrayByData(array, dataType){
-    let newArrays = '';
-    if(typeof(dataType) === ''){
-        return dataType;
-    } else if(typeof(dataType) === Boolean){
-        return dataType;
-    } else if(typeof(dataType) === 'number'){
-        return dataType;
-    }
-
-    // for (let i = 0; i < array.length; i++){
-    //     return(array[i]);
+    let newArrays = [];
+    // if(typeof(dataType) === ''){
+    //     return dataType;
+    // } else if(typeof(dataType) === 'boolean'){
+    //     return dataType;
+    // } else if(typeof(dataType) === 'number'){
+    //     return dataType;
     // }
+
+    // // for (let i = 0; i < array.length; i++){
+    // //     return(array[i]);
+    // // }
+
+    for (let item of array) {
+        if(typeof item === dataType) {
+            newArrays.push(item);
+        }
+    }
+    return newArrays;
 }
-console.log(getArrayByData(randomArr, Boolean));
-console.log(getArrayByData(randomArr, Number));
+console.log(getArrayByData(randomArr, 'boolean'));
+console.log(getArrayByData(randomArr, 'number'));
 console.log(getArrayByData(randomArr, 'string'));

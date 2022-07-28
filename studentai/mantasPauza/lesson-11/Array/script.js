@@ -54,3 +54,43 @@ function getArrayByData(array, dataType) {
 
 console.log(getArrayByData(randomArr, 'string'));
 console.log(getArrayByData(randomArr, 'number'));
+
+
+// kata exercise #1
+
+let arrayOfArrays = [[1, 2], [4, 5, 1, 1], [1], [5, 6, 7, 8, 9]]
+
+function getLengthOfMissingArray(arrayOfArrays) {
+  let result = [];
+
+  if (!arrayOfArrays || arrayOfArrays.length === 0 ) {
+    return 0;
+  }
+
+  for (let i = 0; i < arrayOfArrays.length; i++) {
+    if (arrayOfArrays[i] === null || arrayOfArrays[i].length === 0) {
+        return 0; 
+    } else { 
+        result.push(arrayOfArrays[i].length)
+      }
+    }
+
+  result = result.sort((a, b) => a - b)
+
+  for (let i = 0; i < result.length - 1; i++) {
+    if (result[i] + 1 !== result[i + 1]) {
+        return result[i] + 1;
+    }
+  }
+
+  return result;
+}
+
+
+console.log(getLengthOfMissingArray(arrayOfArrays));
+console.log(getLengthOfMissingArray([[null], [ null, null, null]]));
+console.log(getLengthOfMissingArray([ ]));
+console.log(getLengthOfMissingArray(null));
+console.log(getLengthOfMissingArray([[2, 4, 2, 2], [3, 4], [0, 4, 2], [3, 2, 3, 2, 2, 1, 4], [1, 3, 2, 0, 3], [2, 2, 0, 4, 0, 2, 0, 2, 1], [2, 3, 4, 3, 4, 4, 2, 2], [0, 1, 4, 1, 1, 3, 2, 3, 3, 3]]));
+console.log(getLengthOfMissingArray([[3, 0, 4, 4], [0, 4], [2], [2, 3, 1, 2, 0]]));
+console.log(getLengthOfMissingArray([[], [4, 4], [4, 4, 4, 4], [2, 4, 1]]));

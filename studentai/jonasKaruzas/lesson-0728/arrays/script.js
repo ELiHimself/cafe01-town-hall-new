@@ -21,3 +21,22 @@ function getMaxSubSum(arr) {
 }
 
 console.log(getMaxSubSum(numbersArr));
+
+// Uzduotis 3 ------------------
+console.log('Uzduotis 3 --------------');
+
+let randomArr = [11, 'cat', true, 4, 'mouse', 5, 9, 5, 76, false];
+
+function getArrayByData(array, dataType) {
+  const result = [];
+  for (item of array) {
+    if (typeof item === dataType) {
+      result.push(item);
+    }
+  }
+  return result;
+}
+
+console.log(getArrayByData(randomArr, 'string'));
+console.log(getArrayByData(randomArr, 'number'));
+console.log(getArrayByData(randomArr, 'boolean'));

@@ -7,7 +7,7 @@ for (let item of randomArr){
     if(typeof item === dataType){
         arrayByData.push(item);
     
-}
+    }
 }
 return arrayByData;
 }

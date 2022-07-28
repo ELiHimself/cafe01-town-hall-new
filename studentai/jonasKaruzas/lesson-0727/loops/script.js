@@ -156,9 +156,7 @@ function createTreeRow2(currentRow, allRows) {
 function createStars(num) {
   let result = '*';
   if (num > 1) {
-    for (let i = 1; i < num; i++) {
-      result += ' *';
-    }
+    result += ' *'.repeat(num - 1);
   }
   return result;
 }

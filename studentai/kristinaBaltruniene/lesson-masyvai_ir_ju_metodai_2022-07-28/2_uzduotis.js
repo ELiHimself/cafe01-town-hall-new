@@ -18,3 +18,4 @@ console.log(getMaxSubSum(numbersArr));
 // Sukurkite funkciją getMaxSubSum(arr), kuri sugrąžins masyvo (Array) visų įvestų skaičių, kurie yra didesni nei 0 sumą.
 
 
+

@@ -40,3 +40,14 @@ function getArrayByData(array, dataType) {
 console.log(getArrayByData(randomArr, 'string'));
 console.log(getArrayByData(randomArr, 'number'));
 console.log(getArrayByData(randomArr, 'boolean'));
+
+// Uzduotis 3B ------------------
+console.log('Uzduotis 3B --------------');
+
+function getArrayByData2(array, dataType) {
+  return array.filter((item) => typeof item === dataType);
+}
+
+console.log(getArrayByData2(randomArr, 'string'));
+console.log(getArrayByData2(randomArr, 'number'));
+console.log(getArrayByData2(randomArr, 'boolean'));

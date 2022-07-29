@@ -1,0 +1,26 @@
+// f(x) => x * 2 - 1;
+
+/* 
+
+....*....
+...***...
+..*****..
+.*******.
+*********
+
+*/
+function printTree(height) {
+  for (let i = 1; i <= height; i++) {
+    printRow(i, height);
+  }
+}
+
+function printRow(i, height) {
+  const starCount = i * 2 - 1;
+  const rowWidth = height * 2 - 1;
+  const spaceCount = (rowWidth - starCount) / 2;
+
+  console.log(' '.repeat(spaceCount) + '*'.repeat(starCount) + ' '.repeat(spaceCount));
+}
+
+printTree(30);

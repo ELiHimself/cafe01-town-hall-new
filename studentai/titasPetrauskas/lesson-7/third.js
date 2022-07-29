@@ -14,9 +14,11 @@ function getArrayByData(array, dataType) {
       case 'boolean':
         filtered = randomArr.filter(element => typeof element === 'boolean');
         break;
+      default:
+        return console.log('Oops, something went wrong...');
     }
   }
   console.log(filtered);
 }
 
-getArrayByData(randomArr, 'boolean');
+getArrayByData(randomArr, 'boolion');
